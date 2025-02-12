@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 
+
+
 @Component({
   selector: 'app-root',
   standalone: true,
@@ -11,12 +13,13 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'RaysSecondAngular';
 
-  person = {
-    name: "Inge",
-    age:: 44,
-  }
+  fruit = "";
+  fruitList = ["Banana"];
 
     constructor(){
-      this.person.name = "Inge";
+      let banana = this.fruitList.pop();
+      if (banana != undefined){
+        this.fruit = banana;
+      }
     }
 }
