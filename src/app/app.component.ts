@@ -11,7 +11,7 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'RaysSecondAngular';
 
-    theTypless: string;
+    theTypless: undefined | string;
 
     constructor(){
       this.theTypless = "ich bin ein String"
