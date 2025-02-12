@@ -11,13 +11,12 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'RaysSecondAngular';
 
-    constructor(){
-      this.add(1, 2);
-    }
+  person = {
+    name: "Inge",
+    age:: 44,
+  }
 
-    add(a:number, b: number){
-      return a+b;
+    constructor(){
+      this.person.name = "Inge";
     }
 }
-
-
