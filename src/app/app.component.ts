@@ -11,10 +11,12 @@ import { RouterOutlet } from '@angular/router';
 export class AppComponent {
   title = 'RaysSecondAngular';
 
-    theTypless: undefined | string;
-
     constructor(){
-      this.theTypless = "ich bin ein String"
+      this.add(1, 2);
+    }
+
+    add(a:number, b: number){
+      return a+b;
     }
 }
 
